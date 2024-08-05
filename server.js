@@ -6,7 +6,7 @@ dotenv.config({ path: './.env'});
 
 // Server setup
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3333;
 
 // Body parser
 app.use(express.urlencoded({ extended: true }));
